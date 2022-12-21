@@ -14,10 +14,12 @@
        
         .container-fluid{
             background-color: #000;
+            background-size: cover;
         }
         
         footer div{
             background-color: black;
+            background-size: cover;
         }
         footer p{
             color: #fff;
@@ -31,9 +33,13 @@
         }
 
        nav img{
-        width: 35%;
-        padding-left: 45px;
+            width: 35%;
+            padding-left: 45px;
        }
+
+       .cabecalho{
+            background-size: cover;
+        }
 
     </style>
 </head>
@@ -45,12 +51,12 @@
         <div class="container-fluid"><!--logo e barra de navegacao-->
             <div class="container">
                 <div class="row pt-2">
-                    <div class="col-12 col-lg-6"><!--logo-->
+                    <div class="col-sm-8 col-lg-6"><!--logo-->
                     
                         <a href="index.html" title="Início"><img src="assets/img/cultura_logo.png" width="20%"></a>
                         
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-sm-8 col-lg-6">
                         <nav> <!--barra de navegacao-->
                             <ul class="nav justify-content-end pt-3"><!--joga para a direita-->
 
@@ -68,14 +74,14 @@
        
     <main> 
         <div class="row">
-            <div class="col-6">
-                <div class="d-flex pt-5">
-                    <div class="d-flex justify-content pt-5 pb-5">
+            <div class="col-lg-6 col-sm-12">
+                <div class= "pt-5">
+                    <div class="col-12 align-self-center pt-5 pb-5 img-fluid pb-lg-0">
                         <img src="assets/img/undraw_experience_design_re_dmqq.svg">
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <div class="row">
                 <div class="d-flex justify-content pt-5">
                     <form action="#">
@@ -87,34 +93,34 @@
                     
                         <div class="form-label"> <!--Início do formulário-->
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-lg-6 col-sm-12 ml-5 ml-lg-0">
                                     <div class="form-label">
                                         <label for="firstname">Primeiro Nome</label>
                                         <input type="text" class="form-control" name="firstname" placeholder="Digite seu primeiro nome">
                                     </div>
                                 
-                                    <div class="form-label">
+                                    <div class="form-label ml-5">
                                         <label for="email">E-mail</label>
                                         <input type="text" class="form-control" name="email" placeholder="Digite seu e-mail">
                                     </div>
 
-                                    <div class="form-label">
+                                    <div class="form-label ml-5">
                                         <label for="password">Senha</label>
                                         <input class="form-control" type="password" name="password" placeholder="Digite sua senha">
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-sm-12 ml-5">
                                     <div class="form-label">
                                         <label for="lastname">Sobrenome</label>
                                         <input type="text" class="form-control" name="lastname" placeholder="Digite seu sobrenome">
                                     </div>
                                     
-                                    <div class="form-label">
+                                    <div class="form-label ml-5">
                                         <label for="number">Celular</label>
                                         <input class="form-control" type="tel" name="number" placeholder="(xx) xxxx-xxxx">
                                     </div>
         
-                                    <div class="form-label">
+                                    <div class="form-label ml-5">
                                         <label for="confirmPassword">Confirme sua Senha</label>
                                         <input class="form-control" type="password" name="password" placeholder="Digite sua senha novamente">
                                     </div>
@@ -122,10 +128,12 @@
         
                                         
                                     <div class="gender-title">
-                                        <h6 class="pt-5">Gênero</h6>
+                                        <h6 class="pt-lg-5 pb-sm-3">Gênero</h6>
                                     </div>
                                 <div class="row">
-                                    <div class="col-3">
+
+                                    
+                                    <div class="col-lg-3 pt-sm-3 col-sm-6 pt-lg-0 ml-5">
                                         <div class="gender-group">
                                             <div class="gender-input">
                                                 <input class="form-check-input" type="radio" name="gender">
@@ -133,24 +141,27 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-lg-3 ml-5">
                                         <div class="gender-input">
                                             <input class="form-check-input" type="radio" name="gender">
                                             <label for="male">Masculino</label>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    
+                                    
+                                    <div class="col-lg-3 col-sm-6 ml-5">
                                         <div class="gender-input">
                                             <input class="form-check-input" type="radio" name="gender">
                                             <label for="others">Outros</label>
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="gender-input pb-3">
+                                    <div class="col-lg-3 ml-5">
+                                        <div class="gender-input">
                                             <input class="form-check-input" type="radio" name="gender">
                                             <label for="none">Prefiro não dizer</label>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div> <!--Fim do formulário-->
 
@@ -158,12 +169,12 @@
 
                             <div class="row">
 
-                                <div class="col-8"> <!--Espaço vazio para alinhar o botão-->
+                                <div class="col-8-lg col-sm-5"> <!--Espaço vazio para alinhar o botão-->
                                     
                                 </div>
 
-                                <div class=" pt-5 pb-5 text-white col-4"> <!--Botão independente do formulário. Não precisa da validação-->
-                                    <a class="btn btn-primary" href="index.html" role="button">Continuar</a> 
+                                <div class=" pt-lg-5 pb-lg-5 text-white col-lg-4 col-sm-7"> <!--Botão independente do formulário. Não precisa da validação-->
+                                    <a class="btn btn-primary justify-content-lg-end" href="index.html" role="button">Continuar</a> 
                                 </div>
                             </div>
                         </div>
@@ -174,8 +185,8 @@
     </main>
         <footer class="container-fluid"> <!--início do conteudo do rodapé-->
             <div class="row">
-                <div class="col-12 text-center pt-2 ">
-                    <img src="assets/img/cultfooter.png" width="7%" class="pt-2 img-fluid">
+                <div class="col-12 text-center pt-3 justify-content-center">
+                    <img src="assets/img/cultfooter.png" width="8%" class="pt-3 img-fluid">
                     <p>&copy;Cultura - 2022 PG v3.5</p>
                 </div>
             </div>
@@ -187,9 +198,5 @@
     
         </footer><!--fim do conteudo do rodapé-->
         </html>
-        
-    
-    
-
 </body>
 </html>
